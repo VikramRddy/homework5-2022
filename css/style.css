@@ -55,7 +55,6 @@ a:visited {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
 
 }
@@ -88,18 +87,13 @@ a:visited {
 
 
     .nav_links{
-        display: flex;
+    
         flex-direction: row;
-        flex-wrap: wrap;
-
+    
     }
 
 
     .pricing{
-        display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
         align-items: center;
        
     }
@@ -118,14 +112,15 @@ a:visited {
 
 @media all and (prefers-reduced-motion: reduce){
     #logo{
+        width: 475px;
         animation: none;
     }
 }
 
 @media print {
     body{
-        font-family:'Arial', Helvetica;
-        background-image:none
+        font-family:Arial, Helvetica;
+        background-image:none;
 
     }
 
@@ -142,12 +137,12 @@ a:visited {
 
 
     .pricing{
-
+        align-items: flex-end;
         flex-direction: row;
         flex-wrap: nowrap;
     }
 
-    #card{
+    .card{
         border: solid 2px #45ADDD;
         flex-basis: 325px;
     }
