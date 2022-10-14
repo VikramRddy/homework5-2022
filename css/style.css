@@ -46,7 +46,7 @@ a:visited {
 
 .card{
     display: flex;
-    border-radius: 50px;
+    border-radius: 50px 50px 0px 0px;
     flex-basis: 450px;
     flex-direction: column;
 }
@@ -61,22 +61,21 @@ a:visited {
 }
 
 
-.gallery > img{
+.gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.gallery img{
     border: solid 10px #50C7C7;
     margin: 10px;
     width: 300px;
 
 }
 
-
-.gallery{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-
-}
 
 /* Whenever prompoted to design for screen size, use media query */
 @media screen and (min-width: 900px){
@@ -163,9 +162,8 @@ a:visited {
 
     .card li:nth-child(even)::after {
 
-        content: '👍';
+        content: '👍'; 
       }
-
 
 
 
