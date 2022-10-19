@@ -1,9 +1,12 @@
+/* Code for default view: animate the logo with key frames  */
+
 #logo{
     width: 475px;
     animation: hw5_move 5s;
 }
 
 
+/* key frame width */
 
 @keyframes hw5_move{
     from {width: 25px;}
@@ -28,10 +31,15 @@ header{
     align-items: center;
 }
 
+/* Style the links to have the same color after they have been visited */
+
 a:visited {
     color: #00FF;
   
   }
+
+/* Style header elements that are direct children of a card class */
+
 
 .card > header{
     background: #288088;
@@ -59,6 +67,7 @@ a:visited {
 
 }
 
+/* Helps style images on the website */
 
 .gallery{
     display: flex;
@@ -77,7 +86,10 @@ a:visited {
 
 
 /* Whenever prompoted to design for screen size, use media query */
+
 @media screen and (min-width: 900px){
+
+    /* Code used to showcase 1200px screenshot */
 
     header{
         display: flex;
@@ -103,6 +115,8 @@ a:visited {
         flex-basis: 275px;
     }
 
+    /* Header is always visible at the top of the screen, even when scrolling down  */
+
     body > header{
         position: sticky;
         top:0px;
@@ -111,6 +125,9 @@ a:visited {
 }
 
 @media all and (prefers-reduced-motion: reduce){
+
+    /* Can reduce motion, and stop animation of logo  */
+
     #logo{
         width: 475px;
         animation: none;
@@ -118,6 +135,9 @@ a:visited {
 }
 
 @media print {
+
+    /* Changes the body font for the print view */
+
     body{
         font-family:Arial, Helvetica;
         background-image:none;
@@ -135,6 +155,7 @@ a:visited {
         justify-content: space-around;
     }
 
+    /* elements align along the bottom for pricing class  */
 
     .pricing{
         align-items: flex-end;
@@ -147,6 +168,9 @@ a:visited {
         flex-basis: 325px;
     }
 
+
+    /* Helps make gallery invisible */
+
     #gallery{
         display: none;
     }
@@ -154,6 +178,8 @@ a:visited {
     .gallery{
         display: none;
     }
+
+    /* Last code, to showcase thumbs up emoji in the print view */
 
     .card li:nth-child(even)::after {
 
